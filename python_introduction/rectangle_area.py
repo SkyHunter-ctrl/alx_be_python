@@ -1,6 +1,6 @@
 # Definition of terms
-lenght = 10
-width = 5
+lenght = "10"
+width = "5"
 # Calculation of area
 Area = lenght * width
 area = Area
