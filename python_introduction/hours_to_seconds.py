@@ -1,5 +1,4 @@
 # Define variables
 hours = 2
-seconds = 3600
-Hours = hours  * seconds
+seconds = hours * 3600
 print("{hours} hour(s) is {Hours} seconds")
