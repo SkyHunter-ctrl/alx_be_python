@@ -1,5 +1,5 @@
 # Multiplication Table Generator
-number = float(input("Enter a number to see its multiplication table:. "))
+number = int(input("Enter a number to see its multiplication table:"))
 # for loop 
 for i in range(1, 11):
     product = number * i
