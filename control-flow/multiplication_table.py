@@ -1,6 +1,6 @@
 # Multiplication Table Generator
-number = int(input("Enter a number to see its multiplication table:. "))
+number = float(input("Enter a number to see its multiplication table:. "))
 # for loop 
-for i in range(1, 115):
+for i in range(1, 11):
     product = number * i
     print(f"{number} * {i} = {product}")
