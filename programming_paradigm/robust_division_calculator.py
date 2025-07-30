@@ -12,7 +12,10 @@ def safe_divide(numerator, denominator):
         float: The result of the division or an error message.
     """
     try:
-        result = numerator / denominator
+        num = float(numerator)
+        denom = float(denominator)
+
+        result = num / denom
         return result
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
