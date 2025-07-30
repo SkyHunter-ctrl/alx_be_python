@@ -14,6 +14,8 @@ class BankAccount:
         else:
             print("Insuffient Balance.")
             return False
-    def diplay_balance(self, diplay_balance=True):
+    def diplay_balance(self, diplay_balance):
+        self.account_balance = diplay_balance
+    def display_balance(self):
         return print(f"Current balance is: {self.account_balance:.2f}")
     
