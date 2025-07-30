@@ -1,6 +1,6 @@
 # Robust Division Calculator with Command Line Arguments
 import sys
-def robust_divide(numerator, denominator):
+def safe_divide(numerator, denominator):
     """
     Perform division and handle exceptions.
     
