@@ -37,6 +37,9 @@ class Library:
                 print(f"You have returned: {book}")
                 return
         print("Book not found or not checked out.")
+def __init__(self, name):
+        self.name = name
+        self.books = []
 def main():
     # Create a library instance
     library = Library("Home Library")
