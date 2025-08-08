@@ -17,3 +17,5 @@ def main():
     print(my_book)  # Calls __str__
     print(repr(my_book))  # Calls __repr__
     del my_book  # Calls __del__
+if __name__ == "__main__":
+    main()
