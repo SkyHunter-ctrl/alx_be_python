@@ -17,7 +17,7 @@ class EBook(Book):
         self.author = author
         self.file_size = file_size
     def get_details(self):
-        return f"{self.title}, by {self.author} {self.file_size}MB"
+        return f"Ebook: {self.title}, by {self.author} {self.file_size}MB"
     def __str__(self):
         return self.get_details()
 class PrintBook(Book):
@@ -27,7 +27,7 @@ class PrintBook(Book):
         self.author = author
         self.page_count = page_count
     def get_details(self):
-        return f"{self.title}, by {self.author} Page count: {self.page_count}"
+        return f"PrintBook: {self.title}, by {self.author} Page count: {self.page_count}"
     def __str__(self):
         return self.get_details()
 # Composition - Library:
@@ -39,7 +39,6 @@ class Library:
         self.books.append(book)
 
     def list_books(self):
-        print("📚 Library Collection:")
         for book in self.books:
             print(" -", book.get_details())
     def get_details(self):
