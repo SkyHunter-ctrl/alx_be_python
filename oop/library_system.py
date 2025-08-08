@@ -8,14 +8,14 @@ class Book:
     def get_details(self):
         return f"{self.title}, by {self.author}"
 # Derived classes EBook and PrintBook
-class EBook:
+class EBook(Book):
     def __init__(self, title: str, author: str, file_size: int):
         self.title = title
         self.author = author
         self.file_size = file_size
     def get_details(self):
         return f"{self.title}, by {self.author} {self.file_size}MB"
-class PrintBook:
+class PrintBook(Book):
     def __init__(self, title: str, author: str, page_count: int):
         self.title = title
         self.author = author
