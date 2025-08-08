@@ -25,7 +25,7 @@ class PrintBook(Book):
         self.author = author
         self.page_count = page_count
     def get_details(self)-> str:
-        return f"PrintBook: {self.title} by {self.author}, Page count: {self.page_count}"
+        return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
     def __str__(self)-> str:
         return self.get_details()
 # Composition - Library:
