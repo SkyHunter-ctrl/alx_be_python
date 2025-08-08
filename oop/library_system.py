@@ -3,11 +3,9 @@ class Book:
     def __init__(self, title: str, author: str):
         self.title = title
         self.author = author
-    def get_info(self):
-        return f"{self.title}, by {self.author}"
-    def get_details(self):
-        return f"{self.title}, by {self.author}"
-    def __str__(self):
+    def get_details(self)-> str:
+        return f"Book: {self.title}, by {self.author}"
+    def __str__(self)-> str:
         return self.get_details()
 # Derived classes EBook and PrintBook
 class EBook(Book):
@@ -16,9 +14,9 @@ class EBook(Book):
         self.title = title
         self.author = author
         self.file_size = file_size
-    def get_details(self):
+    def get_details(self)-> str:
         return f"Ebook: {self.title}, by {self.author} {self.file_size}MB"
-    def __str__(self):
+    def __str__(self)-> str:
         return self.get_details()
 class PrintBook(Book):
     def __init__(self, title: str, author: str, page_count: int):
@@ -26,9 +24,9 @@ class PrintBook(Book):
         self.title = title
         self.author = author
         self.page_count = page_count
-    def get_details(self):
+    def get_details(self)-> str:
         return f"PrintBook: {self.title}, by {self.author} Page count: {self.page_count}"
-    def __str__(self):
+    def __str__(self)-> str:
         return self.get_details()
 # Composition - Library:
 class Library:
