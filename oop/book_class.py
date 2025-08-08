@@ -10,4 +10,10 @@ class Book:
         return f"{self.title} by {self.author} ({self.year})"
     def __repr__(self):
         return f"Book(title={self.title!r}, author={self.author!r}, year={self.year})"
-    
+from book_class import Book
+# Example usage
+def main():
+    my_book = Book("1984", "George Orwell", 1949)
+    print(my_book)  # Calls __str__
+    print(repr(my_book))  # Calls __repr__
+    del my_book  # Calls __del__
