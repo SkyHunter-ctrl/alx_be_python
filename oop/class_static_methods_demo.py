@@ -10,7 +10,7 @@ class Calculator:
         """Returns the sum of x and y."""
         return a + b
     @classmethod
-    def multiply(cls, a: float, b: float) -> float:
+    def multiply(cls, a, b):
         """Returns the product of x and y."""
         print(f"Calculation type: {cls.calculation_type}")  
         return a * b
