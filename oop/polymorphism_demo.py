@@ -8,10 +8,10 @@ class Shape:
 # Derived classes
 class Rectangle(Shape):
     def __init__(self, length: float, width: float):
-        self.lenght = length
+        self.length = length
         self.width = width
-    def area(self):
-        return self.lenght * self.width
+    def area(self)-> float :
+        return self.length * self.width
 class Circle(Shape):
     def __init__(self, radius: float):
         self.radius = radius
